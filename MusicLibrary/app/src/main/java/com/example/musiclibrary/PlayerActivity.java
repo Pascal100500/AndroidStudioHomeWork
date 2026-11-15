@@ -8,6 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.widget.TextView;
+import android.widget.Button;
 
 public class PlayerActivity extends AppCompatActivity {
 
@@ -16,6 +17,10 @@ public class PlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_player);
+
+        Button backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(v -> finish());
+
         TextView detailTitle = findViewById(R.id.detailTitle);
         TextView detailComposer = findViewById(R.id.detailComposer);
         TextView detailYear = findViewById(R.id.detailYear);

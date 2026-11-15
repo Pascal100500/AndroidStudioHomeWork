@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Название произведения"
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -26,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Имя композитора"
+            android:textColor="#C2D1E0"
             android:textSize="14sp" />
         <SeekBar
             android:id="@+id/songSeekBar"
@@ -44,6 +46,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="#C2D1E0"
                 android:text="0:00"
                 android:textSize="12sp" />
 
@@ -51,6 +54,7 @@
                 android:id="@+id/totalTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#C2D1E0"
                 android:text="0:00"
                 android:textSize="12sp" />
 

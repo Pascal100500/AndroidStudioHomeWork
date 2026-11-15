@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#10283F"
     android:fillViewport="true">
 
     <LinearLayout
@@ -10,12 +11,31 @@
         android:orientation="vertical"
         android:padding="24dp">
 
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Назад"
+            android:textAllCaps="false"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#D9A441"
+            android:textColor="#10283F" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="О ПРОИЗВЕДЕНИИ"
+            android:textColor="#D9A441"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
         <TextView
             android:id="@+id/detailTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Название произведения"
-            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
 
@@ -24,23 +44,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Композитор"
-            android:textSize="18sp"
-            android:layout_marginBottom="12dp" />
+            android:textColor="#C2D1E0"
+            android:textSize="19sp"
+            android:layout_marginBottom="20dp" />
 
         <TextView
             android:id="@+id/detailYear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Год создания"
-            android:textSize="16sp"
-            android:layout_marginBottom="24dp" />
+            android:textColor="#D9A441"
+            android:textSize="17sp"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="История произведения"
+            android:textColor="#D9A441"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
 
         <TextView
             android:id="@+id/detailDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Описание произведения"
-            android:textSize="16sp" />
+            android:textColor="#E1E8EF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp" />
 
     </LinearLayout>
 

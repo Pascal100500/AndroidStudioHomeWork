@@ -218,4 +218,19 @@ public class SongAdapter extends ArrayAdapter<Song> {
                 seconds
         );
     }
+
+    public void stopPlayback() {
+
+        handler.removeCallbacks(updateProgress);
+
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+
+        currentSongPosition = -1;
+
+        notifyDataSetChanged();
+    }
 }
