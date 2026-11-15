@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название произведения"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/detailComposer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Композитор"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/detailYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Год создания"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание произведения"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
